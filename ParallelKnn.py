@@ -46,8 +46,6 @@ class CustomKNN:
 		print("\nAcurracy :", str(self.accuracy) + "%")
 
 def mod_data(df):
-	df.replace('?', -999999, inplace = True)
-	
 	df.replace('yes', 4, inplace = True)
 	df.replace('no', 2, inplace = True)
 
